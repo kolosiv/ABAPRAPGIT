@@ -1,0 +1,138 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'BPIKO', 
+    typeNamePlural: 'BPIKOs'
+  }
+}
+annotate view Z_C_BPIKO with
+{
+  @UI.facet: [ {
+    id: 'idIdentification', 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'BPIKO', 
+    position: 10 
+  } ]
+  @UI.hidden: true
+  RecordID;
+  
+  @UI.lineItem: [ {
+    position: 10 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  Partner;
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+  
+  @UI.lineItem: [ {
+    position: 20 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  Firstname;
+  
+  @UI.lineItem: [ {
+    position: 30 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  Lastname;
+  
+  @UI.lineItem: [ {
+    position: 40 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  Middlename;
+  
+  @UI.lineItem: [ {
+    position: 50 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  Birthdate;
+  
+  @UI.lineItem: [ {
+    position: 60 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  Marrstat;
+  
+  @UI.lineItem: [ {
+    position: 70 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  Sex;
+  
+  @UI.lineItem: [ {
+    position: 80 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  Prevfamylyflag;
+  
+  @UI.lineItem: [ {
+    position: 90 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  Prevfamyly;
+  
+  @UI.lineItem: [ {
+    position: 100 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  Education;
+  
+  @UI.lineItem: [ {
+    position: 110 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  Natio;
+  
+  @UI.lineItem: [ {
+    position: 120 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  Emplcategory;
+  
+  @UI.lineItem: [ {
+    position: 130 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  Residenct;
+}

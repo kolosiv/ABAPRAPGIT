@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for Z_C_PRODUCTMAIN'
+define service ZPRODUCTMAIN {
+  expose Z_C_PRODUCTMAIN as PRODUCTMAIN;
+}

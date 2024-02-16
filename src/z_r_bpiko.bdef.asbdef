@@ -1,0 +1,58 @@
+managed implementation in class ZBP_BPIKO unique;
+strict ( 2 );
+with draft;
+define behavior for Z_R_BPIKO alias BPIKO
+persistent table zabpiko
+draft table ZDBPIKO
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( readonly )
+   RecordID,
+   LocalCreatedAt,
+   LocalCreatedBy,
+   LastChangedAt,
+   LocalLastChangedAt,
+   LocalLastChangedBy;
+
+  field ( numbering : managed )
+   RecordID;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  determination getcreatedet on save { create; field Residenct; }
+
+  mapping for ZABPIKO
+  {
+    RecordID = recordid;
+    Partner = partner;
+    LocalCreatedBy = local_created_by;
+    LocalCreatedAt = local_created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+    Firstname = firstname;
+    Lastname = lastname;
+    Middlename = middlename;
+    Birthdate = birthdate;
+    Marrstat = marrstat;
+    Sex = sex;
+    Prevfamylyflag = prevfamylyflag;
+    Prevfamyly = prevfamyly;
+    Education = education;
+    Natio = natio;
+    Emplcategory = emplcategory;
+    Residenct = residenct;
+  }
+
+}

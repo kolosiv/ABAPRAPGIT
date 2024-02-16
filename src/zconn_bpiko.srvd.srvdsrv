@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for Z_C_BPIKO'
+define service ZCONN_BPIKO {
+  expose Z_C_BPIKO as BPIKO;
+}

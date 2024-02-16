@@ -1,0 +1,84 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'PRODUCTMAIN',
+    typeNamePlural: 'Products'
+  }
+}
+annotate view Z_C_PRODUCTMAIN with
+{
+  @UI.facet: [ {
+    id: 'idIdentification',
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Product',
+    position: 10
+  } ]
+  @UI.hidden: true
+  RecordID;
+
+  @UI.lineItem: [ {
+    position: 10 ,
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 10
+  } ]
+  ProductID;
+
+  @UI.lineItem: [ {
+    position: 20 ,
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 20
+  } ]
+  Decription;
+
+  @UI.lineItem: [ {
+  position: 25,
+  importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 25
+  } ]
+  prodtype;
+
+  @UI.lineItem: [ {
+  position: 30 ,
+  importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 30
+  } ]
+  active;
+
+  @UI.lineItem: [ {
+  position: 40 ,
+  importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 40
+  } ]
+  validfrom;
+
+  @UI.lineItem: [ {
+  position: 50 ,
+  importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 50
+  } ]
+  validto;
+
+  @UI.lineItem: [ {
+  position: 60 ,
+  importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 60
+  } ]
+  rate;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+}
